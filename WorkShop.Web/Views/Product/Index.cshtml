@@ -1,0 +1,32 @@
+﻿@model WorkShop.Models.Product
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<h2>Produit</h2>
+
+@Html.ActionLink("Add", "AddProduct", new { /* id=item.PrimaryKey */ })
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>List of product</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var item in Model.Name)
+        {*@
+            <tr>
+                <td>
+                    @Html.LabelForModel("Test")
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+            @*}*@
+        </tbody>
+    </table>

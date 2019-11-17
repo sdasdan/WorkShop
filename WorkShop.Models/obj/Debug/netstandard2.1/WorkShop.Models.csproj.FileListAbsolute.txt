@@ -1,0 +1,8 @@
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\bin\Debug\netstandard2.1\WorkShop.Models.deps.json
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\bin\Debug\netstandard2.1\WorkShop.Models.dll
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\bin\Debug\netstandard2.1\WorkShop.Models.pdb
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\obj\Debug\netstandard2.1\WorkShop.Models.csprojAssemblyReference.cache
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\obj\Debug\netstandard2.1\WorkShop.Models.AssemblyInfoInputs.cache
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\obj\Debug\netstandard2.1\WorkShop.Models.AssemblyInfo.cs
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\obj\Debug\netstandard2.1\WorkShop.Models.dll
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Models\obj\Debug\netstandard2.1\WorkShop.Models.pdb

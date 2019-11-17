@@ -130,3 +130,5 @@ C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\bin\Debug\netcoreapp3.0\zh
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\WorkShop.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\AddProduct.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Index.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\WorkShop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\AddCategorie.cshtml.g.cs

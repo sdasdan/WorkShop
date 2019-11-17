@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
+using System.Linq;
+using WorkShop.Models;
 
 namespace WorkShop.Web.Controllers
 {
@@ -7,6 +10,7 @@ namespace WorkShop.Web.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
 
@@ -15,6 +19,6 @@ namespace WorkShop.Web.Controllers
             return View();
         }
 
-         
+       
     }
 }

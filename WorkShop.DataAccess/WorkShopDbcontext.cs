@@ -10,11 +10,11 @@ namespace WorkShop.DataAccess
         {
         }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductModel> Products { get; set; }
 
-        public DbSet<Categorie> Categories { get; set; }
+        public DbSet<CategorieModel> Categories { get; set; }
 
-        public DbSet<Stock> Stocks { get; set; }
+        public DbSet<StockModel> Stocks { get; set; }
 
         
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj": {}
+    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj": {
+    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj",
+        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj",
         "projectName": "WorkShop.Models",
-        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj",
+        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj",
         "packagesPath": "C:\\Users\\dsuleyman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\obj\\",
+        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -16,7 +16,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Id" class="control-label"></label>
-                @if (Model.Categories.Count == 0)
+                @*@if (Model.Categories.Count == 0)
                 {
                     <select asp-for="Id"
                             asp-items="@(new SelectList(Model.Categories, "Id","Name"))">
@@ -26,7 +26,7 @@
                 else
                 {
 
-                }
+                }*@
 
                 @* @Html.ListBoxFor(m => m.SelectedCountry, new SelectList(Model.CountryList, "Value", "Text", Model.CountryList.SelectedValue), new { @Id = "lstcountry", @style = "width:200px;height:60px;" })*@
             </div>

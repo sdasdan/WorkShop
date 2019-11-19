@@ -28,12 +28,12 @@ namespace WorkShop.DataAccess.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ProductId")
-                        .HasColumnType("uniqueidentifier");
+                    //b.Property<Guid?>("ProductId")
+                    //    .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    //b.HasIndex("ProductId");
 
                     b.ToTable("Categories");
                 });
@@ -71,12 +71,11 @@ namespace WorkShop.DataAccess.Migrations
                     b.ToTable("Stocks");
                 });
 
-            modelBuilder.Entity("WorkShop.Models.Categorie", b =>
-                {
-                    b.HasOne("WorkShop.Models.Product", null)
-                        .WithMany("Categories")
-                        .HasForeignKey("ProductId");
-                });
+            //modelBuilder.Entity("WorkShop.Models.Categorie", b =>
+            //    {
+            //        b.HasOne("WorkShop.Models.Product", null)
+            //            .WithMany("Categories");
+            //    });
 
             modelBuilder.Entity("WorkShop.Models.Product", b =>
                 {

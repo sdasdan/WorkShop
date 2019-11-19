@@ -34,6 +34,7 @@ namespace WorkShop.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddDbContext<WorkShopDbcontext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("WorkShopDataBase")));
         }

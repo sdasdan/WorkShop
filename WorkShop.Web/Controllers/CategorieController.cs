@@ -69,8 +69,6 @@ namespace WorkShop.Web.Controllers
             {
                 return Problem("erreur insertion db","Error",0,"Erreur");
             }
-        }
-
-    
+        }   
     }
 }

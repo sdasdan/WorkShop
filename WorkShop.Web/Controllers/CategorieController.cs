@@ -11,18 +11,26 @@ namespace WorkShop.Web.Controllers
 {
     public class CategorieController : Controller
     {
+
         private readonly WorkShopDbcontext _context;
 
         public CategorieController(WorkShopDbcontext context)
         {
             _context = context;
         }
+
+        public Guid Id { get; set; } = System.Guid.NewGuid();
         public async Task<IActionResult> Index()
         {
             return View(await _context.Categories.ToListAsync());
         }
 
-        public IActionResult AddCategorie()
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        public IActionResult Error()
         {
             return View();
         }
@@ -44,11 +52,25 @@ namespace WorkShop.Web.Controllers
             return View(categorie);
         }
 
-        [HttpGet]
         [Route("[action]")]
-        public IActionResult NewCategorie()
+        public IActionResult Create(string name)
         {
-            return PartialView("DetailCategorie");
+            var model = new CategorieModel();
+            model.Id = this.Id;
+            model.Name = name;
+
+            if (ModelState.IsValid)
+            {
+                _context.Categories.Add(model);
+                _context.SaveChanges();
+                return Redirect($"Categorie/Details/{model.Id}");
+            }
+            else
+            {
+                return Problem("erreur insertion db","Error",0,"Erreur");
+            }
         }
+
+    
     }
 }

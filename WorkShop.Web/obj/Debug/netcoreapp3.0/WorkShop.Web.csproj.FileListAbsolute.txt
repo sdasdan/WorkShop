@@ -133,3 +133,4 @@ C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Wo
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\WorkShop.Web.pdb
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Add.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Details.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Error.cshtml.g.cs

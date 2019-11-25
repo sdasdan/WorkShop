@@ -102,25 +102,6 @@ namespace WorkShop.Web.Controllers
                 return Problem("erreur insertion db", "Error", 0, "Erreur");
             }
         }
-
-        //public async Task<IActionResult> Delete(Guid? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var categorie = await _context.Categories
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (categorie == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return View(categorie);
-        //}
-
-        // POST: Movies/Delete/5
        
         public async Task<IActionResult> Delete(Guid id)
         {

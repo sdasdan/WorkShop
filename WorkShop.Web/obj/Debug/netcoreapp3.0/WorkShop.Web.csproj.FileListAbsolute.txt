@@ -118,7 +118,6 @@ C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Wo
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Index.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\AddProduct.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -134,3 +133,5 @@ C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Wo
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Add.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Details.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Error.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Edit.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\Add.cshtml.g.cs

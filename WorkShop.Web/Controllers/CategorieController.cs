@@ -35,6 +35,23 @@ namespace WorkShop.Web.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var categorie = await _context.Categories
+                 .FirstOrDefaultAsync(m => m.Id == id);
+            if (categorie == null)
+            {
+                return NotFound();
+            }
+
+            return View(categorie);
+        }
+
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -67,8 +84,51 @@ namespace WorkShop.Web.Controllers
             }
             else
             {
-                return Problem("erreur insertion db","Error",0,"Erreur");
+                return Problem("erreur insertion db", "Error", 0, "Erreur");
             }
-        }   
+        }
+
+        [Route("[action]")]
+        public IActionResult Update(CategorieModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                this._context.Categories.Update(model);
+                _context.SaveChanges();
+                return Redirect($"Categorie/Details/{model.Id}");
+            }
+            else
+            {
+                return Problem("erreur insertion db", "Error", 0, "Erreur");
+            }
+        }
+
+        //public async Task<IActionResult> Delete(Guid? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var categorie = await _context.Categories
+        //        .FirstOrDefaultAsync(m => m.Id == id);
+        //    if (categorie == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(categorie);
+        //}
+
+        // POST: Movies/Delete/5
+       
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var categorie = await _context.Categories.FindAsync(id);
+            _context.Categories.Remove(categorie);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

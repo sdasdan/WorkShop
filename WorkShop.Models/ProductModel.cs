@@ -12,5 +12,7 @@ namespace WorkShop.Models
 
         public string Name { get; set; }
 
+        public ICollection<ProductCategorieModel> ProductCategorie { get; set; }
+
     }
 }

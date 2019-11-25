@@ -52,7 +52,7 @@ namespace WorkShop.DataAccess.Migrations
                 //table.ForeignKey(
                 //    name: "FK_Categories_Products_ProductId",
                 //    column: x => x.ProductId,
-                //    principalTable: "Products",
+                //    principalTable: "Products",   
                 //    principalColumn: "Id",
                 //    onDelete: ReferentialAction.Restrict);
             });

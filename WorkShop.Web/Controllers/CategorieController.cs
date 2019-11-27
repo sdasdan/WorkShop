@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using WorkShop.DataAccess;
 using WorkShop.Models;
@@ -52,7 +50,8 @@ namespace WorkShop.Web.Controllers
             return View(categorie);
         }
 
-        public async Task<IActionResult> Details(Guid? id)
+        [HttpGet]
+        public async Task<IActionResult> Details(Guid id)
         {
             if (id == null)
             {
@@ -70,6 +69,7 @@ namespace WorkShop.Web.Controllers
         }
 
         [Route("[action]")]
+        [HttpPost]
         public IActionResult Create(string name)
         {
             var model = new CategorieModel();
@@ -102,7 +102,7 @@ namespace WorkShop.Web.Controllers
                 return Problem("erreur insertion db", "Error", 0, "Erreur");
             }
         }
-       
+
         public async Task<IActionResult> Delete(Guid id)
         {
             var categorie = await _context.Categories.FindAsync(id);

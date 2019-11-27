@@ -7,13 +7,15 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
-            <div class="form-group">
-                <label asp-for="Name" class="control-label">Nom</label>
-                <input type="text" name="name" id="NameId" />
+        <form asp-controller="Categorie" method="post" asp-action="Create">
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-3 col-form-label">Nom :</label>
+                <div class="col-sm-9">
+                    <input type="text" name="name" id="NameId" class="form-control rounded-0 d-inline" />
+                </div>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" name="AddNewCategorie" value="Create" />
+                <input type="submit" class="btn btn-primary btn-block rounded-0" name="AddNewCategorie" value="Ajouter" />
             </div>
         </form>
     </div>

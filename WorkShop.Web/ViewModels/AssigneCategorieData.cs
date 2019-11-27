@@ -2,19 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WorkShop.Models;
 
 namespace WorkShop.Web.ViewModels
 {
-    public class ProductViewModel
+    public class AssigneCategorieData
     {
-        public Guid Id { get; set; }
-
+        public int CategorieID { get; set; }
         public string Name { get; set; }
-
-        public IEnumerable<CategorieModel> Categories { get; set; }
-
         public bool Assigned { get; set; }
-
     }
 }

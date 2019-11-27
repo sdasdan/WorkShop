@@ -1,12 +1,11 @@
-﻿@model WorkShop.Models.ProductModel
-
+﻿@model IEnumerable<WorkShop.Models.ProductModel>
 @{
-    ViewData["Title"] = "AddProduct";
+    ViewData["Title"] = "Produit";
 }
 
 <h2>Produit</h2>
 
-@Html.ActionLink("Add", "AddProduct", new { /* id=item.PrimaryKey */ })
+@Html.ActionLink("Add", "Add", new { /* id=item.PrimaryKey */ })
 
 <table class="table">
     <thead>
@@ -15,18 +14,18 @@
         </tr>
     </thead>
     <tbody>
-        @*@foreach (var item in Model.Name)
-        {*@
+        @foreach (var item in Model)
+        {
             <tr>
                 <td>
-                    @Html.LabelForModel("Test")
+                    @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Voulez-vous supprimer?')">Delete</a>
                 </td>
             </tr>
-            @*}*@
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>

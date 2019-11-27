@@ -1,41 +1,43 @@
 ﻿@model WorkShop.Web.ViewModels.ProductViewModel
 
 
-<h1>Creation Produit</h1>
+<h1>Creation de Produit</h1>
 
 <h4>Product</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Add">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <input type="text" name="name" id="NameId" />
-            </div>
-            <div class="form-group">
-                @Html.ActionLink("Ajouté des catégories pour ce produit", "AddCategorie"@*, new {  id= Model.Select(x => x.) }*@)
-                @*@if (Model.Categories.Count == 0)
-        {
-            <select asp-for="Id"
-                    asp-items="@(new SelectList(Model.Categories, "Id","Name"))">
-                <option>Please select one</option>
-            </select>
-        }
-        else
-        {
-
-        }*@
-
-                @* @Html.ListBoxFor(m => m.SelectedCountry, new SelectList(Model.CountryList, "Value", "Text", Model.CountryList.SelectedValue), new { @Id = "lstcountry", @style = "width:200px;height:60px;" })*@
+    <div class="col-md-5">
+        <form asp-controller="Product" method="post" asp-action="Create">
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-3 col-form-label">Nom :</label>
+                <div class="col-sm-9">
+                    <input type="text" name="name" id="NameId" class="form-control rounded-0 d-inline" />
+                </div>
             </div>
 
-            <div class="form-group ">
-                <a class="btn btn-primary" href="#">Ajout</a>
+            <div class="form-group">
+                <div class="row">
+                    @foreach (var item in Model.Categories)
+                    {
+
+                        <div class="col-md-4">
+                            <input class="mr-1"
+                                   type="checkbox"
+                                   name="selectedCategories"
+                                   value="@item.Id"
+                                   id="@item.Id" />
+                            <label for="@item.Id" class="mr-2"> @item.Name </label>
+                        </div>
+
+                    }
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" name="AddNewProduct" value="Create" />
             </div>
         </form>
     </div>
 </div>
-
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

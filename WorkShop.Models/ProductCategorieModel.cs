@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WorkShop.Models
 {
+    [Table("ProductCategorie")]
     public class ProductCategorieModel
     {
-        public Guid Id { get; set; } 
+        public Guid Id { get; set; }
 
         public Guid ProductId { get; set; }
 

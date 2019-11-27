@@ -135,3 +135,4 @@ C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Ra
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Error.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Categorie\Edit.cshtml.g.cs
 C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\Add.cshtml.g.cs
+C:\Users\dsuleyman\source\Repos\Workshop\WorkShop.Web\obj\Debug\netcoreapp3.0\Razor\Views\Product\Details.cshtml.g.cs

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Web\\WorkShop.Web.csproj": {}
+    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Web\\WorkShop.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj": {
+    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj",
         "projectName": "WorkShop.DataAccess",
-        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj",
+        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj",
         "packagesPath": "C:\\Users\\dsuleyman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj": {
-                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj"
+              "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj": {
+                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj": {
+    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj",
+        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj",
         "projectName": "WorkShop.Models",
-        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj",
+        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj",
         "packagesPath": "C:\\Users\\dsuleyman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\obj\\",
+        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Web\\WorkShop.Web.csproj": {
+    "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Web\\WorkShop.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Web\\WorkShop.Web.csproj",
+        "projectUniqueName": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Web\\WorkShop.Web.csproj",
         "projectName": "WorkShop.Web",
-        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Web\\WorkShop.Web.csproj",
+        "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Web\\WorkShop.Web.csproj",
         "packagesPath": "C:\\Users\\dsuleyman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Web\\obj\\",
+        "outputPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -174,11 +174,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj"
+              "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.DataAccess\\WorkShop.DataAccess.csproj"
               },
-              "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj": {
-                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\Workshop\\WorkShop.Models\\WorkShop.Models.csproj"
+              "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj": {
+                "projectPath": "C:\\Users\\dsuleyman\\source\\Repos\\WorkShop\\WorkShop.Models\\WorkShop.Models.csproj"
               }
             }
           }

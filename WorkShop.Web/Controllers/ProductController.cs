@@ -56,7 +56,7 @@ namespace WorkShop.Web.Controllers
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction($"Details");
+            return Redirect($"Details/{model.Id}");
         }
 
         [HttpGet]
@@ -75,6 +75,17 @@ namespace WorkShop.Web.Controllers
             }
 
             return View(Products);
+        }
+
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var prodcat = _context.Set<ProductCategorieModel>().Where(x => x.ProductId == id).Select(x => x).ToArray();
+            _context.Set<ProductCategorieModel>().RemoveRange(prodcat);
+
+            var product = await _context.Products.FindAsync(id);
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

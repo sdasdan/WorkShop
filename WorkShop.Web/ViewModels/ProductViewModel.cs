@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WorkShop.Models;
 
 namespace WorkShop.Web.ViewModels
@@ -14,7 +12,16 @@ namespace WorkShop.Web.ViewModels
 
         public IEnumerable<CategorieModel> Categories { get; set; }
 
-        public bool Assigned { get; set; }
+        public List<CheckboxPermissions> Assigned { get; set; }
 
+    }
+
+    public class CheckboxPermissions
+    {
+        public Guid Id { get; set; }
+
+        public string Name { get; set; }
+
+        public bool Selected { get; set; }
     }
 }

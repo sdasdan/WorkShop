@@ -1,0 +1,56 @@
+﻿@model WorkShop.Web.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Produit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-3 col-form-label">Nom :</label>
+                <div class="col-sm-9">
+                    <input type="text" name="name" id="NameId" class="form-control rounded-0 d-inline" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    @foreach (var item in Model.Assigned)
+                    {
+
+                        <div class="col-md-6">
+                            <input class="mr-1"
+                                   type="checkbox"
+                                   name="selectedCategories"
+                                   value="@item.Id"
+                                   checked="@item.Selected"
+                                   id="@item.Id" />
+                            <label for="@item.Id"> @item.Name </label>
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" asp-action="Update" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

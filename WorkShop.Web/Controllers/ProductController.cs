@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorkShop.DataAccess;
@@ -59,6 +60,48 @@ namespace WorkShop.Web.Controllers
             return Redirect($"Details/{model.Id}");
         }
 
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var product = await _context.Products
+                .Include(p => p.ProductCategorie)
+                .ThenInclude(pc => pc.Categorie)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            var prodCat = _context.Set<ProductCategorieModel>()
+                .Where(x => x.ProductId == id)
+                .Select(x => x).ToArray();
+
+            var cat = await _context.Categories.ToListAsync();
+
+            var productCat = new ProductViewModel
+            {
+                Id = product.Id,
+                Name = product.Name,
+            };
+
+            productCat.Assigned = new List<CheckboxPermissions>();
+
+            foreach (var item in cat)
+            {
+                var assigned = new CheckboxPermissions
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    Selected = (prodCat.Select(x => x.CategorieId).Contains(item.Id) ? true : false)
+                };
+                // (product.ProductCategorie.Select(x => x.CategorieId).Contains(Id)
+                productCat.Assigned.Add(assigned);
+            }
+
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(productCat);
+        }
+
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -69,6 +112,7 @@ namespace WorkShop.Web.Controllers
 
             var Products = await _context.Products.Include(p => p.ProductCategorie).ThenInclude(pc => pc.Categorie)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (Products == null)
             {
                 return NotFound();
